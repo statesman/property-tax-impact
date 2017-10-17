@@ -1,0 +1,36 @@
+{
+  "name": "20170815-school-ratings",
+  "version": "1.0.0",
+  "description": "2016 city population estimates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/statesman/20170815-school-ratings.git"
+  },
+  "keywords": [],
+  "author": "Statesman Interactives <interactives@statesman.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/statesman/20170815-school-ratings/issues"
+  },
+  "homepage": "https://github.com/statesman/20170815-school-ratings#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "pym.js": "^1.1.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-less": "^1.4.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nunjucks-2-html": "^3.0.0",
+    "request": "^2.81.0",
+    "s3": "^4.4.0"
+  }
+}

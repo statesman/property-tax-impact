@@ -1,0 +1,110 @@
+// Core variables and mixins
+@import "node_modules/bootstrap/less/variables.less";
+@import "mixins.less";
+
+// Reset and dependencies
+@import "normalize.less";
+@import "print.less";
+@import "glyphicons.less";
+
+// Core CSS
+@import "scaffolding.less";
+@import "type.less";
+// @import "code.less";
+@import "grid.less";
+@import "tables.less";
+@import "forms.less";
+@import "buttons.less";
+
+// Components
+// @import "component-animations.less";
+// @import "dropdowns.less";
+// @import "button-groups.less";
+// @import "input-groups.less";
+// @import "navs.less";
+// @import "navbar.less";
+// @import "breadcrumbs.less";
+@import "pagination.less";
+// @import "pager.less";
+// @import "labels.less";
+// @import "badges.less";
+// @import "jumbotron.less";
+// @import "thumbnails.less";
+// @import "alerts.less";
+// @import "progress-bars.less";
+// @import "media.less";
+// @import "list-group.less";
+// @import "panels.less";
+@import "responsive-embed.less";
+// @import "wells.less";
+// @import "close.less";
+
+// Components w/ JavaScript
+// @import "modals.less";
+// @import "tooltip.less";
+// @import "popovers.less";
+// @import "carousel.less";
+
+// Utility classes
+@import "utilities.less";
+@import "responsive-utilities.less";
+
+html, body {
+  overflow-x: hidden;
+}
+
+h4 {
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 700;
+  text-rendering: optimizelegibility;
+  font-family: Georgia,"Times New Roman",Times,serif;
+}
+
+/* not sure what this is */
+// fieldset {
+//     div.col-search {
+//         padding-left: 0px;
+//     }
+//     p {
+//       font-weight: normal;
+//       font-size: 0.9em;
+//     }
+
+//     input {
+//         margin-bottom: 5px;
+//     }
+// }
+
+span.trend-line {
+  width: 20px;
+  overflow: hidden;
+}
+
+
+label {
+  font-weight: normal;
+}
+
+span.mobile-message {
+      visibility: hidden;
+      @media (max-width: 430px) {
+      visibility: visible;
+    }
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 0px;
+}
+
+div.container {
+  // BREAKPOINTS FOR PYM & IOS
+  @media(max-width: @screen-sm-max) {
+    max-width: 560px;
+    margin: 0px auto;
+  }
+  @media(max-width: 400px) {
+    max-width: 300px;
+    margin: 0px auto;
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "utensils": [
+    {"forks": 23, "clean": true},
+    {"spoons": 13, "clean": false},
+    {"knives": 2, "clean": false}
+  ],
+  "books": [
+    {"title": "The Clown", "author": "Heinrich Böll"},
+    {"title": "The Shipping News", "author": "Annie Proulx"},
+    {"title": "The Hearing Trumpet", "author": "Leonora Carrington"}
+  ]
+}
