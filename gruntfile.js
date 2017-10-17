@@ -127,10 +127,10 @@ module.exports = function(grunt) {
           var s3Path = where_dis_go === "prod" ? prod_url : stage_url;
 
           var payload = {
-              "text": "deploying single-page-embed *" + config.sitePath +  "*: " + s3Path,
+              "text": "deploying property-tax-impact *" + config.sitePath +  "*: " + s3Path,
               "channel": "#bakery",
-              "username": "Bakebot",
-              "icon_emoji": ":cake:"
+              "username": "Taxbot",
+              "icon_emoji": ":moneybag:"
           };
 
           // send the request
