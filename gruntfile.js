@@ -81,6 +81,10 @@ module.exports = function(grunt) {
       styles: {
         files: ['src/**less'],
         tasks: ['less']
+      },
+      templates: {
+        files: ['src/njk/*'],
+        tasks: ['nunjucks']
       }
     },
 
