@@ -2,6 +2,7 @@
   "homes":
 [
   {
+    "id": 1,
     "code": "circle-c-north",
     "neighborhood": "Circle C North",
     "region": "Southwest Austin",
@@ -16,6 +17,7 @@
     "opttext": "Optional text about this home here."
   },
   {
+    "id": 2,
     "code": "wyldwood",
     "neighborhood": "Wyldwood",
     "region": "Bastrop County",
@@ -27,6 +29,21 @@
     "appchange": 51.6,
     "taxdirection": "increased",
     "taxchange": 18.8,
+    "opttext": ""
+  },
+  {
+    "id": 3,
+    "code": "pville",
+    "neighborhood": "Park At Blackhawk",
+    "region": "Pflugerville",
+    "bedrooms": "",
+    "baths": 2.5,
+    "sqfoot": "2,120",
+    "acres": 0.2,
+    "appdir": "increased",
+    "appchange": 46.9,
+    "taxdirection": "increased",
+    "taxchange": 27.3,
     "opttext": ""
   }
 ]

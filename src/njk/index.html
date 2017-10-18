@@ -14,7 +14,7 @@
         <div class="col-xs-12">
           <h1 class="pagetitle">Relating property assessments to property taxes</h3>
         </div>
-        <div class="col-xs-12 col-md-7">
+        <div class="col-xs-12 col-md-7 intro">
           <p>There are a number of factors that affect a homeowners property tax bill. It all starts with an "assessment" of what a home is worth ... then taxable amount ... then exemptions ... then the factor that matters the most is the tax rate set by governmental entities, such as the school districts, utility districts and city and county governments.</p>
           <p>We looked at a few home from around Central Texas to compare and contrast assessment impact on property tax bills.</p>
           <p>With so many variables at play, it is difficult to generalize. If you want to see your own tax assessments, they are available on your county assessor website: <a href="https://propaccess.trueautomation.com/clientdb/?cid=46" target="_blank">Bastrop</a> | <a href="http://esearch.hayscad.com/" target="_blank">Hays</a> | <a href="" target="_blank">Travis</a> | <a href="" target="_blank">Williamson</a>.</p>
@@ -36,13 +36,11 @@
               <!-- push for large+ -->
               <img class="img-responsive" src="images/{{ home.code }}.png"><br>
             </div>
-            <div class="col-xs-12 col-md-6 col-md-pull-6">
-              <div class="home-intro">
-                <h2>{{ home.neighborhood }} in {{ home.region }}</h2>
-                <p>This {{ home.neighborhood }} home has <strong>{{ home.sqfoot }}</strong> square feet and <strong>{{ home.baths }}</strong> bathrooms.</p>
-                <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> between 2013 and 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> in the same period.</p>
-                <!-- optional take -->{% if home.opptext %}<p>{{ home.opptext }}</p>{% endif %}
-              </div>
+            <div class="col-xs-12 col-md-6 col-md-pull-6 home-intro">
+              <h2>({{ home.id }}) {{ home.neighborhood }} in {{ home.region }}</h2>
+              <p>This {{ home.neighborhood }} home has <strong>{{ home.sqfoot }}</strong> square feet and <strong>{{ home.baths }}</strong> bathrooms.</p>
+              <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> between 2013 and 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> in the same period.</p>
+              <!-- optional take -->{% if home.opptext %}<p>{{ home.opptext }}</p>{% endif %}
             </div>
           </div>
           <div class="row">
