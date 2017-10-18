@@ -1,25 +1,33 @@
 {
-  "utensils": [
-    {"forks": 23, "clean": true},
-    {"spoons": 13, "clean": false},
-    {"knives": 2, "clean": false}
-  ],
-  "books": [
-    {
-      "title": "The Clown",
-      "author": "Heinrich Böll"
-    },
-    {
-      "title": "The Shipping News",
-      "author": "Annie Proulx"
-    },
-    {
-      "title": "The Hearing Trumpet",
-      "author": "Leonora Carrington"
-    },
-    {
-      "title": "The Hobbit",
-      "author": "J.R.R. Tolkien"
-    }
-  ]
+  "homes":
+[
+  {
+    "code": "circle-c-north",
+    "neighborhood": "Circle C North",
+    "region": "Southwest Austin",
+    "bedrooms": 3,
+    "baths": 2.5,
+    "sqfoot": "1,985",
+    "acres": 0.17,
+    "appdir": "increased",
+    "appchange": 40.8,
+    "taxdirection": "increased",
+    "taxchange": 24.3,
+    "opttext": "Optional text about this home here."
+  },
+  {
+    "code": "wyldwood",
+    "neighborhood": "Wyldwood",
+    "region": "Bastrop County",
+    "bedrooms": 3,
+    "baths": 2,
+    "sqfoot": "1,592",
+    "acres": 6.02,
+    "appdir": "increased",
+    "appchange": 51.6,
+    "taxdirection": "increased",
+    "taxchange": 18.8,
+    "opttext": ""
+  }
+]
 }

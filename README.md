@@ -1,3 +1,10 @@
+
+
+## convert to json
+
+- [csvjson](http://www.csvjson.com/csv2json)
+
+
 # single-page-embed
 
 Trying to set a template to start with when creating a single page to embed in Methode.
