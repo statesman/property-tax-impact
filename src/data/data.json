@@ -3,6 +3,36 @@
 [
   {
     "id": 1,
+    "code": "travis",
+    "neighborhood": "Travis Heights",
+    "region": "South Austin",
+    "bedrooms": 3,
+    "baths": 3,
+    "sqfoot": "1,710",
+    "acres": 0.2003,
+    "appdir": "increased",
+    "appchange": 40,
+    "taxdirection": "increased",
+    "taxchange": 24,
+    "opttext": "This home is a case where the assessed value increased 24 percent between 2013 and 2014, but the homestead exemption caps the assessed value at 10 percent higher than the previous year. So, when in 2017 the assessed value was lower than the previous year, the tax bill still went up 10 percemt because the taxable amount is still catching up."
+  },
+  {
+    "id": 2,
+    "code": "fareast",
+    "neighborhood": "5720 Toscana Ave",
+    "region": "Far East Austin",
+    "bedrooms": 3,
+    "baths": 2.5,
+    "sqfoot": "1,395",
+    "acres": 0.1816,
+    "appdir": "increased",
+    "appchange": 33.5,
+    "taxdirection": "increased",
+    "taxchange": 23.8,
+    "opttext": "This home does not carry a homestead exemption, so the tax bill reflects and ups and downs of the assessed value of the home."
+  },
+  {
+    "id": 3,
     "code": "circle-c-north",
     "neighborhood": "Circle C North",
     "region": "Southwest Austin",
@@ -14,25 +44,25 @@
     "appchange": 40.8,
     "taxdirection": "increased",
     "taxchange": 24.3,
-    "opttext": "Optional text about this home here."
-  },
-  {
-    "id": 2,
-    "code": "wyldwood",
-    "neighborhood": "Wyldwood",
-    "region": "Bastrop County",
-    "bedrooms": 3,
-    "baths": 2,
-    "sqfoot": "1,592",
-    "acres": 6.02,
-    "appdir": "increased",
-    "appchange": 51.6,
-    "taxdirection": "increased",
-    "taxchange": 18.8,
     "opttext": ""
   },
   {
-    "id": 3,
+    "id": 4,
+    "code": "eanes",
+    "neighborhood": "Beecave Woods",
+    "region": "Westlake",
+    "bedrooms": 4,
+    "baths": 2.5,
+    "sqfoot": "2,091",
+    "acres": 0.268,
+    "appdir": "increased",
+    "appchange": 46.7,
+    "taxdirection": "increased",
+    "taxchange": 32,
+    "opttext": ""
+  },
+  {
+    "id": 5,
     "code": "pville",
     "neighborhood": "Park At Blackhawk",
     "region": "Pflugerville",
@@ -44,6 +74,21 @@
     "appchange": 46.9,
     "taxdirection": "increased",
     "taxchange": 27.3,
+    "opttext": ""
+  },
+  {
+    "id": 6,
+    "code": "wyldwood",
+    "neighborhood": "Wyldwood",
+    "region": "Bastrop County",
+    "bedrooms": 3,
+    "baths": 2,
+    "sqfoot": "1,592",
+    "acres": 6.02,
+    "appdir": "increased",
+    "appchange": 51.6,
+    "taxdirection": "increased",
+    "taxchange": 18.8,
     "opttext": ""
   }
 ]

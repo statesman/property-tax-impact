@@ -38,9 +38,9 @@
             </div>
             <div class="col-xs-12 col-md-6 col-md-pull-6 home-intro">
               <h2>({{ home.id }}) {{ home.neighborhood }} in {{ home.region }}</h2>
-              <p>This {{ home.neighborhood }} home has <strong>{{ home.sqfoot }}</strong> square feet and <strong>{{ home.baths }}</strong> bathrooms.</p>
+              <p>This {{ home.neighborhood }} home has <strong>{{ home.sqfoot }} square feet</strong>{% if home.bedrooms %}, <strong>{{ home.bedrooms }} bedrooms</strong> {% endif %} and <strong>{{ home.baths }} bathrooms</strong>.</p>
               <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> between 2013 and 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> in the same period.</p>
-              <!-- optional take -->{% if home.opptext %}<p>{{ home.opptext }}</p>{% endif %}
+              <!-- optional take -->{% if home.opttext %}<p>{{ home.opttext }}</p>{% endif %}
             </div>
           </div>
           <div class="row">
