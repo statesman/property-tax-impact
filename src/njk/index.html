@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
     <link rel="stylesheet" href="style.css">
-  <title>Project_title</title>
+  <title>Relating property assessments to property taxes</title>
   </head>
   <body>
     <div class="container">
@@ -15,9 +15,11 @@
           <h1 class="pagetitle">Relating property assessments to property taxes</h3>
         </div>
         <div class="col-xs-12 col-md-7 intro">
-          <p>There are a number of factors that affect a homeowners property tax bill. It all starts with an "assessment" of what a home is worth ... then taxable amount ... then exemptions ... then the factor that matters the most is the tax rate set by governmental entities, such as the school districts, utility districts and city and county governments.</p>
-          <p>We looked at a few home from around Central Texas to compare and contrast assessment impact on property tax bills.</p>
-          <p>With so many variables at play, it is difficult to generalize. If you want to see your own tax assessments, they are available on your county assessor website: <a href="https://propaccess.trueautomation.com/clientdb/?cid=46" target="_blank">Bastrop</a> | <a href="http://esearch.hayscad.com/" target="_blank">Hays</a> | <a href="" target="_blank">Travis</a> | <a href="" target="_blank">Williamson</a>.</p>
+          <p>There are a number of factors that affect a homeowners property tax bill. While the buck stops with the taxing entites and the tax rates they set, your home value matters since that is what the tax rate is applied against. <!-- Your home value can go up or down, but the amount you pay depends on the tax rate.  -->If a tax rate is the same from one year to the next, but your home value increases, then your tax bill increases, too.<!--  In addition, in a hot housing market like Austin has experience in the past five years, a homestead exemption can have a siginificant impact on your tax bill. --></p>
+          <p>It all starts with an "appraisal value," which is what your home is worth on the market that year, as determined by the appraisal district. That appraisal is then used to determine the "assessed value" of a home, which takes into account the homestead exemption homeowers can have if the live in their home. The base exemption is set when a owner buys a house, and each year thereafter the assessed value cannot be raised higher than 10 percent of the pervious year's value. This helps temper large increases in tax bills if a home value jumps a lot in a single year.</p>
+          <p>Finally, the "taxable value" is the "assessed value" minus any exemptions granted by the taxing entity, which can be different depending on the entity. The tax rate they set is applied against this "taxable value."</p>
+          <p>With so many variables at play, it is difficult to generalize how a tax bill will change year over year. We used appraisal district data to compare and contrast a few homes around Central Texas.</p>
+          <p>If you want to see your own tax assessments, they are available on your county assessor website: <a href="https://propaccess.trueautomation.com/clientdb/?cid=46" target="_blank">Bastrop</a> | <a href="http://esearch.hayscad.com/" target="_blank">Hays</a> | <a href="" target="_blank">Travis</a> | <a href="" target="_blank">Williamson</a>.</p>
         </div>
         <div class="col-xs-12 col-md-5">
           <img class="img-responsive" src="images/main-map.png">
@@ -38,7 +40,7 @@
             </div>
             <div class="col-xs-12 col-md-6 col-md-pull-6 home-intro">
               <h2>({{ home.id }}) {{ home.neighborhood }} in {{ home.region }}</h2>
-              <p>This {{ home.neighborhood }} home has <strong>{{ home.sqfoot }} square feet</strong>{% if home.bedrooms %}, <strong>{{ home.bedrooms }} bedrooms</strong> {% endif %} and <strong>{{ home.baths }} bathrooms</strong>.</p>
+              <p>This {{ home.neighborhood }} home has <strong>{{ home.sqfoot }} square feet</strong>{% if home.acres %} on <strong>{{ home.acres }} acres</strong>{% endif %}{% if home.bedrooms %}, <strong>{{ home.bedrooms }} bedrooms</strong> {% endif %} and <strong>{{ home.baths }} bathrooms</strong>.</p>
               <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> between 2013 and 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> in the same period.</p>
               <!-- optional take -->{% if home.opttext %}<p>{{ home.opttext }}</p>{% endif %}
             </div>
