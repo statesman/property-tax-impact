@@ -23,11 +23,12 @@ $ grunt
 ## embed for Methode
 Insert a code block and add this, which is the table and the pym code:
 
+### for staging
 ```
 <div id="embed"></div>
 <script src="https://pym.nprapps.org/pym.v1.min.js"></script>
 <script>
-var embed = new pym.Parent('embed', 'https://s3-us-west-2.amazonaws.com/apps.statesman.com/news/single-page-embed/index.html', {});
+var embed = new pym.Parent('embed', 'https://s3-us-west-2.amazonaws.com/dev.apps.statesman.com/news/property-tax-impact/index.html', {});
 </script>
 ```
 
