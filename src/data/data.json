@@ -41,7 +41,7 @@
     "bill2017": "$4,763",
     "taxdirection": "increased",
     "taxchange": 23.8,
-    "opttext": "This rental home does not carry a homestead exemption, so the tax bill tracks with the ups and downs of the assessed value. Do you rent in Austin? That can be a factor as owners pass on those costs in rising rental rates."
+    "opttext": "This rental home does not carry a homestead exemption, so the appraised and assessed values are the same (so the red line hides the blue one), and tax bill tracks with the ups and downs of the assessed value. Do you rent in Austin? That can be a factor as owners pass on those costs in rising rental rates."
   },
   {
     "id": 3,
