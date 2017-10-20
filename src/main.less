@@ -53,28 +53,23 @@ html, body {
   overflow-x: hidden;
 }
 
-h4 {
+
+h1, .h1, h2, .h2, h3, .h3 {
+  margin-top: 0px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia,"Times New Roman",Times,serif;
+  font-weight: 700;
+}
+
+h3 {
   font-style: italic;
   font-size: 26px;
   font-weight: 700;
   text-rendering: optimizelegibility;
-  font-family: Georgia,"Times New Roman",Times,serif;
 }
 
-/* not sure what this is */
-// fieldset {
-//     div.col-search {
-//         padding-left: 0px;
-//     }
-//     p {
-//       font-weight: normal;
-//       font-size: 0.9em;
-//     }
-
-//     input {
-//         margin-bottom: 5px;
-//     }
-// }
 
 span.trend-line {
   width: 20px;
@@ -93,20 +88,11 @@ span.mobile-message {
     }
 }
 
-h1, .h1, h2, .h2, h3, .h3 {
-  margin-top: 0px;
-}
-
 div.container {
+  // breaking padding and width for embedding
   padding: 0;
-  width: 100%;
-  // BREAKPOINTS FOR PYM & IOS
-  // @media(max-width: @screen-sm-max) {
-  //   max-width: 560px;
-  //   margin: 0px auto;
-  // }
+  width: 98%;
   @media(max-width: 400px) {
-    // max-width: 300px;
     margin: 0px auto;
   }
 }
