@@ -19,7 +19,7 @@
             <hr>
             </div>
             <div class="col-xs-12 col-sm-6 home-intro">
-              <h2><span class="order">{{ home.id }}</span> {{ home.neighborhood }} in {{ home.region }}</h2>
+              <h2>{{ home.neighborhood }} in {{ home.region }}</h2>
               <p>This {% if home.bedrooms %}<strong>{{ home.bedrooms }} bedroom</strong>, {% endif %} <strong>{{ home.baths }} bath</strong> home in {{ home.neighborhood }} has <strong>{{ home.sqfoot }} square feet</strong>{% if home.acres %} on <strong>{{ home.acres }} acres</strong>{% endif %}.</p>
               <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> from {{ home.app2013 }} in 2013 to {{ home.app2017 }} in 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> from {{ home.bill2013 }} to {{ home.bill2017 }} in the same period.</p>
               <!-- optional take -->{% if home.opttext %}<p>{{ home.opttext }}</p>{% endif %}
