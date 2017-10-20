@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <link rel="stylesheet" href="style.css">
+  <title>How home values, tax rates affect your property tax bill</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+      {% for home in homes %}
+        {% if home.code == 'circlec' %}
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+            <hr>
+            </div>
+            <div class="col-xs-12 col-sm-6 home-intro">
+              <h2><span class="order">{{ home.id }}</span> {{ home.neighborhood }} in {{ home.region }}</h2>
+              <p>This {% if home.bedrooms %}<strong>{{ home.bedrooms }} bedroom</strong>, {% endif %} <strong>{{ home.baths }} bath</strong> home in {{ home.neighborhood }} has <strong>{{ home.sqfoot }} square feet</strong>{% if home.acres %} on <strong>{{ home.acres }} acres</strong>{% endif %}.</p>
+              <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> from {{ home.app2013 }} in 2013 to {{ home.app2017 }} in 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> from {{ home.bill2013 }} to {{ home.bill2017 }} in the same period.</p>
+              <!-- optional take -->{% if home.opttext %}<p>{{ home.opttext }}</p>{% endif %}
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <!-- push for large+ -->
+              <img class="img-responsive" src="images/{{ home.code }}.png"><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <img class="img-responsive" src="images/{{ home.code }}-assessment.png">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <img class="img-responsive" src="images/{{ home.code }}-tax-bill.png">
+            </div>
+            <div class="col-xs-12">
+              <div class="panel panel-primary">
+                <div class="panel-body">
+                  <h4><a href="https://www.mystatesman.com/property-tax-impact/">TAX BILL EXPLAINED: More examples how values, exemptions and tax rates affect tax bills.</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="//localhost:35729/livereload.js"></script>
+  </body>
+</html>

@@ -24,6 +24,15 @@ var embed = new pym.Parent('embed', 'https://s3-us-west-2.amazonaws.com/apps.sta
 </script>
 ```
 
+### for story embed production
+```
+<div id="embed"></div>
+<script src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+var embed = new pym.Parent('embed', 'https://s3-us-west-2.amazonaws.com/apps.statesman.com/news/property-tax-impact/tease.html', {});
+</script>
+```
+
 ### for staging
 ```
 <div id="embed"></div>
@@ -32,6 +41,9 @@ var embed = new pym.Parent('embed', 'https://s3-us-west-2.amazonaws.com/apps.sta
 var embed = new pym.Parent('embed', 'https://s3-us-west-2.amazonaws.com/dev.apps.statesman.com/news/property-tax-impact/index.html', {});
 </script>
 ```
+
+
+
 
 #### Install
 ```

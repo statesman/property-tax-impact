@@ -34,7 +34,7 @@
 // @import "progress-bars.less";
 // @import "media.less";
 // @import "list-group.less";
-// @import "panels.less";
+@import "panels.less";
 @import "responsive-embed.less";
 // @import "wells.less";
 // @import "close.less";
@@ -48,6 +48,12 @@
 // Utility classes
 @import "utilities.less";
 @import "responsive-utilities.less";
+
+@brand-primary: #242222; // darken(#428bca, 6.5%); // #337ab7
+
+a, a:active {
+    color: #b31c27;
+}
 
 html, body {
   overflow-x: hidden;
@@ -84,6 +90,9 @@ span.trend-line {
   overflow: hidden;
 }
 
+.panel {
+  margin-top: 10px;  
+}
 
 label {
   font-weight: normal;
@@ -109,4 +118,7 @@ div.home-intro p, div.intro p {
   font-size: 1.2em;
 }
 
-@hr-border: #999;
+@hr-border: @brand-primary;
+
+@panel-bg: @gray-lighter;
+
