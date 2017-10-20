@@ -12,11 +12,15 @@
     "baths": 3,
     "sqfoot": "1,710",
     "acres": 0.2,
+    "app2013": "$405,232",
+    "app2017": "$567,481",
     "appdir": "increased",
     "appchange": 40,
+    "bill2013": "$9,285",
+    "bill2017": "$11,518",
     "taxdirection": "increased",
     "taxchange": 24,
-    "opttext": "The was a significant increase in the appraised value of this home between 2013 and 2015, but the homestead exemption capped the assessed value at 10 percent higher than the previous year. The tax bill increased at a steady rate to catch up with the capped assessed values, even in 2017 when the appraised value was slightly lower than the previous year."
+    "opttext": "Although the appraised value of this home increased significantly between 2013 and 2015, the homestead cap mitigated the effect on the homeowner’s tax bill. Taxes increased at a steady rate to catch up with the capped assessed values, even in 2017 when the appraised value was slightly lower than the previous year."
   },
   {
     "id": 2,
@@ -29,14 +33,18 @@
     "baths": 2.5,
     "sqfoot": "1,395",
     "acres": 0.18,
+    "app2013": "$140,639",
+    "app2017": "$187,750",
     "appdir": "increased",
     "appchange": 33.5,
+    "bill2013": "$3,848",
+    "bill2017": "$4,763",
     "taxdirection": "increased",
     "taxchange": 23.8,
-    "opttext": "This home does not carry a homestead exemption, so appraised and assessed values are the same and the tax bill tracks with the ups and downs of the assessed value."
+    "opttext": "This rental home does not carry a homestead exemption, so the tax bill tracks with the ups and downs of the assessed value. Do you rent in Austin? That can be a factor as owners pass on those costs in rising rental rates."
   },
   {
-    "id": 4,
+    "id": 3,
     "code": "circlec",
     "county": "Travis",
     "Address": "9233 Hopeland Dr",
@@ -46,14 +54,18 @@
     "baths": 2.5,
     "sqfoot": "2,830",
     "acres": 0.23,
+    "app2013": "$316,447",
+    "app2017": "$450,889",
     "appdir": "increased",
     "appchange": 42.5,
+    "bill2013": "$7,209",
+    "bill2017": "$9,090",
     "taxdirection": "increased",
     "taxchange": 26.1,
-    "opttext": "Since 2013, the proportion of the total tax bill that goes to AISD has increased from 51.9 percent to 54.9 percent."
+    "opttext": "Since 2013, the proportion of the total tax bill that goes to the Austin school district has increased 3 percentage points to 54.9 percent."
   },
   {
-    "id": 3,
+    "id": 4,
     "code": "eanes",
     "county": "Travis",
     "Address": "1323 Wilderness Dr",
@@ -63,11 +75,15 @@
     "baths": 2.5,
     "sqfoot": "2,091",
     "acres": 0.27,
+    "app2013": "$462,824",
+    "app2017": "$679,040",
     "appdir": "increased",
     "appchange": 46.7,
+    "bill2013": "$10,500",
+    "bill2017": "$13,863",
     "taxdirection": "increased",
     "taxchange": 32,
-    "opttext": "Similar to AISD, the Eanes School District taxes have taken an increasingly larger share of this home's total tax bill, from 51.7 percent to 56.5 percent."
+    "opttext": "Eanes school district taxes, like others in the Austin area, have taken an increasingly larger share of this home's total tax bill, growing from 51.7 percent in 2013 to 56.5 percent 2015."
   },
   {
     "id": 5,
@@ -80,8 +96,12 @@
     "baths": 2,
     "sqfoot": "1,592",
     "acres": 6.02,
+    "app2013": "$196,621",
+    "app2017": "$298,165",
     "appdir": "increased",
     "appchange": 51.6,
+    "bill2013": "$4,064",
+    "bill2017": "$4,830",
     "taxdirection": "increased",
     "taxchange": 18.8,
     "opttext": "The appraised value of this Bastrop County home increased at a faster rate in 2017, so the homestead exemption capped the assessed value at 10 percent more than 2016."
@@ -91,17 +111,21 @@
     "code": "pville",
     "county": "Travis",
     "Address": "20021 Harrier Flight Trl",
-    "neighborhood": "Park At Blackhawk",
+    "neighborhood": "Park at Blackhawk",
     "region": "Pflugerville",
     "bedrooms": 3,
     "baths": 2.5,
     "sqfoot": "2,120",
     "acres": 0.2,
+    "app2013": "$160,560",
+    "app2017": "$235,808",
     "appdir": "increased",
     "appchange": 46.9,
+    "bill2013": "$4,600",
+    "bill2017": "$5,854",
     "taxdirection": "increased",
     "taxchange": 27.3,
-    "opttext": "A 2015 spike in appraised value of this Pflugerville home brought in a homestead exemption cap, but the balance was made up in 2016 when the value didn't change much. The cap was applied again in 2017."
+    "opttext": "A 2015 spike in appraised value of this Pflugerville kicked in the homestead valuation cap, but taxes caught up in 2016 when the value didn't change much. The cap was applied again in 2017."
   },
   {
     "id": 7,
@@ -114,11 +138,15 @@
     "baths": 2,
     "sqfoot": "2,134",
     "acres": "",
+    "app2013": "$205,014",
+    "app2017": "$295,456",
     "appdir": "increased",
     "appchange": 44.1,
+    "bill2013": "$5,074",
+    "bill2017": "$7,111",
     "taxdirection": "increased",
     "taxchange": 40.1,
-    "opttext": "Leander ISD's percentage of the total tax bill for this Cedar Park home hasn't changed much since 2013, but it started at a much higher at 56.6 percent, compared to 51.9 percent for AISD in 2013."
+    "opttext": "A 2015 spike in appraised value of this Pflugerville kicked in the homestead valuation cap, but taxes caught up in 2016 when the value didn't change much. The cap was applied again in 2017."
   }
 ]
 }

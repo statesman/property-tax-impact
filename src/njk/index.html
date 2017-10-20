@@ -16,14 +16,16 @@
         </div>
         <div class="col-xs-12 col-md-7 intro">
           <p>By Christian McDonald, Austin American-Statesman</p>
-          <p>There are a number of factors that affect a homeowner's property tax bill. While the buck stops with the taxing entities and the tax rates they set, your home value matters since that is what the tax rate is applied against. <!-- Your home value can go up or down, but the amount you pay depends on the tax rate.  -->If a tax rate is the same from one year to the next, but your home value increases, then your tax bill increases, too.<!--  In addition, in a hot housing market like Austin has experience in the past five years, a homestead exemption can have a significant impact on your tax bill. --></p>
-          <p>It all starts with an "appraisal value," which is what your home (the land and your house) is worth on the market that year, as determined by the appraisal district. That appraisal is then used to determine the "assessed value" of a home, which takes into account the homestead exemption homeowners can have if the live in their home. The base exemption is set when a owner buys a house, and each year thereafter the assessed value cannot be raised higher than 10 percent of the previous year's value. This helps temper large increases in tax bills if a home value jumps a lot in a single year.</p>
-          <p>Finally, the "taxable value" is the "assessed value" minus any exemptions granted by the taxing entity, which can be different depending on the entity. The tax rate they set is applied against this "taxable value."</p>
-          <p>With so many variables at play, it is difficult to generalize how a tax bill will change year over year. We used appraisal district data to compare and contrast a few homes around Central Texas.</p>
+          <p>Property taxes in Texas can be complicated. While tax rates set by taxing jurisdictions — including cities, school districts, and emergency services districts — are ultimately to blame for tax bills, your home’s value matters since that is what the tax rate is applied against. If your overall tax rate stays the same but your home value increases, then your tax bill increases, too.</p>
+          <p>It all starts with the <strong>appraised value</strong> of your land and it’s “improvements” – your home, work sheds, stables and the like. Your county’s appraisal district is bound by state law to base their valuations on market values. (They do have an added challenge in that home sale prices are not public in Texas.)</p>
+          <p>The <strong>assessed value</strong> starts with the appraised value, but then applies the state homestead exemption, if you have one. Homeowners can apply for that exemption if the property is your owner-occupied primary residence. State law caps the amount assessed values can increase on homesteads at 10 percent a year. This is the base value taxing jurisdictions start with.</p>
+          <p>Finally, the <strong>taxable value</strong> is the assessed value minus any other exemptions granted by the taxing jurisdiction, which can be different depending on the entity. For example, Travis County applies an additional 20 percent exemption for homesteads, but the City of Austin applies only 8 percent.</p>
+          <p>With so many variables at play, it is difficult to generalize how much Austin area tax bills have increased. So, we used appraisal district data to compare property tax changes for a few homes around Central Texas.</p>
           <p>If you want to see your own tax assessments, they are available on your county assessor website: <a href="https://propaccess.trueautomation.com/clientdb/?cid=46" target="_blank">Bastrop</a> | <a href="http://esearch.hayscad.com/" target="_blank">Hays</a> | <a href="" target="_blank">Travis</a> | <a href="" target="_blank">Williamson</a>.</p>
         </div>
         <div class="col-xs-12 col-md-5">
           <h3>How some typical tax rates have changed over time</h3>
+          <p>While tax rates have generally fallen in recent years, in many cases rising property values cancel out or overtake the drop, making for higher overall tax bills.</p>
           <img class="img-responsive" src="images/tax-rate-chart.png">
           <h3>Our example homes</h3>
           <img class="img-responsive" src="images/main-map.png">
@@ -44,8 +46,8 @@
             </div>
             <div class="col-xs-12 col-md-6 col-md-pull-6 home-intro">
               <h2>({{ home.id }}) {{ home.neighborhood }} in {{ home.region }}</h2>
-              <p>This {{ home.neighborhood }} home has <strong>{{ home.sqfoot }} square feet</strong>{% if home.acres %} on <strong>{{ home.acres }} acres</strong>{% endif %}{% if home.bedrooms %}, <strong>{{ home.bedrooms }} bedrooms</strong> {% endif %} and <strong>{{ home.baths }} bathrooms</strong>.</p>
-              <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> between 2013 and 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> in the same period.</p>
+              <p>This {% if home.bedrooms %}<strong>{{ home.bedrooms }} bedroom</strong>, {% endif %} <strong>{{ home.baths }} bath</strong> {{ home.neighborhood }} home has <strong>{{ home.sqfoot }} square feet</strong>{% if home.acres %} on <strong>{{ home.acres }} acres</strong>{% endif %}.</p>
+              <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> from {{ home.app2013 }} in 2013 to {{ home.app2017 }} in 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> from {{ home.bill2013 }} to {{ home.bill2017 }} in the same period.</p>
               <!-- optional take -->{% if home.opttext %}<p>{{ home.opttext }}</p>{% endif %}
             </div>
           </div>
