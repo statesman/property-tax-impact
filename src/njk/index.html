@@ -15,13 +15,13 @@
           <h1 class="pagetitle">Relating property assessments to property taxes</h3>
         </div>
         <div class="col-xs-12 col-sm-7 intro">
-          <p>By Christian McDonald, Austin American-Statesman</p>
-          <p>Property taxes in Texas can be complicated. While tax rates set by taxing jurisdictions — including cities, school districts, and emergency services districts — are ultimately to blame for tax bills, your home’s value matters since that is what the tax rate is applied against. If your overall tax rate stays the same but your home value increases, then your tax bill increases, too.</p>
-          <p>It all starts with the <strong>appraised value</strong> of your land and it’s “improvements” – your home, work sheds, stables and the like. Your county’s appraisal district is bound by state law to base their valuations on market values. (They do have an added challenge in that home sale prices are not public in Texas.)</p>
-          <p>The <strong>assessed value</strong> starts with the appraised value, but then applies the state homestead exemption, if you have one. Homeowners can apply for that exemption if the property is your owner-occupied primary residence. State law caps the amount assessed values can increase on homesteads at 10 percent a year. This is the base value taxing jurisdictions start with.</p>
-          <p>Finally, the <strong>taxable value</strong> is the assessed value minus any other exemptions granted by the taxing jurisdiction, which can be different depending on the entity. For example, Travis County applies an additional 20 percent exemption for homesteads, but the City of Austin applies only 8 percent.</p>
-          <p>With so many variables at play, it is difficult to generalize how much Austin area tax bills have increased. So, we used appraisal district data to compare property tax changes for a few homes around Central Texas.</p>
-          <p>If you want to see your own tax assessments, they are available on your county assessor website: <a href="https://propaccess.trueautomation.com/clientdb/?cid=46" target="_blank">Bastrop</a> | <a href="http://esearch.hayscad.com/" target="_blank">Hays</a> | <a href="" target="_blank">Travis</a> | <a href="" target="_blank">Williamson</a>.</p>
+          <p>By <a href="https://www.mystatesman.com/staff/christian-mcdonald/">Christian McDonald</a>, Austin American-Statesman</p>
+          <p>Property taxes in Texas can be complicated. Your tax bills are calculated based on a combination of values set by the appraisal district, exemptions, and tax rates set by your elected officials. If your property values and exemptions don't change but tax rates go down, then your tax bill follow. If your tax rate stays the same, but your home value increases, then your tax bill increases, too.</p>
+          <p>It all starts with the <strong>appraised value</strong> of your land and it’s “improvements” – your home, work sheds, stables and the like. Your county’s appraisal district is bound by state law to base their valuations on what your home would sell for. They do have an added challenge in that home sale prices are not public in Texas.</p>
+          <p>There are some protections for property owners in the form of homestead exemptions for your owner-occupied primary residence. The <strong>assessed value</strong> starts with the appraised value, but then applies the state homestead exemption, if you have one. State law caps the amount assessed values can increase on homesteads at 10 percent a year. This is the base value taxing jurisdictions start with.</p>
+          <p>Finally, the <strong>taxable value</strong> is the assessed value minus any other exemptions granted by the taxing jurisdiction, which can be different depending on the entity. For example, Travis County applies a 20 percent exemption for homesteads, but the City of Austin applies only 8 percent. Once the jurisdiction adopts their tax rate, it is applied to the taxable value for that entity. The combination of all the jurisdictions make up your tax bill.</p>
+          <p>With so many variables at play, it is difficult to generalize how much Austin area tax bills have changed. So, we used appraisal district data to compare property tax changes for a few homes around Central Texas.</p>
+          <p>If you want to see your own tax assessments and estimated bills, they are available on your county assessor website: <a href="https://propaccess.trueautomation.com/clientdb/?cid=46" target="_blank">Bastrop</a> | <a href="http://esearch.hayscad.com/" target="_blank">Hays</a> | <a href="" target="_blank">Travis</a> | <a href="" target="_blank">Williamson</a>.</p>
         </div>
         <div class="col-xs-12 col-sm-5">
           <h3>How some typical tax rates have changed over time</h3>
@@ -45,7 +45,7 @@
               <img class="img-responsive" src="images/{{ home.code }}.png"><br>
             </div>
             <div class="col-xs-12 col-sm-6 col-sm-pull-6 home-intro">
-              <h2>({{ home.id }}) {{ home.neighborhood }} in {{ home.region }}</h2>
+              <h2><span class="order">{{ home.id }}</span> {{ home.neighborhood }} in {{ home.region }}</h2>
               <p>This {% if home.bedrooms %}<strong>{{ home.bedrooms }} bedroom</strong>, {% endif %} <strong>{{ home.baths }} bath</strong> {{ home.neighborhood }} home has <strong>{{ home.sqfoot }} square feet</strong>{% if home.acres %} on <strong>{{ home.acres }} acres</strong>{% endif %}.</p>
               <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> from {{ home.app2013 }} in 2013 to {{ home.app2017 }} in 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> from {{ home.bill2013 }} to {{ home.bill2017 }} in the same period.</p>
               <!-- optional take -->{% if home.opttext %}<p>{{ home.opttext }}</p>{% endif %}
