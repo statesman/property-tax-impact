@@ -60,7 +60,6 @@ module.exports = function(grunt) {
       prod: {
         files: {
           'public/scripts.js': [
-            'node_modules/jquery/dist/jquery.js',
             'node_modules/pym.js/dist/pym.v1.js',
             'src/main.js'
           ]
@@ -104,6 +103,20 @@ module.exports = function(grunt) {
           ext: '.html'
         }]
       }
+    },
+
+    htmlmin: {
+      dist: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true,
+          preserveLineBreaks: true
+        },
+        files: {
+          'public/index.html': 'public/index.html',
+          'public/tease.html': 'public/tease.html'
+        }
+      }
     }
   });
 
@@ -115,6 +128,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-nunjucks-2-html');
+  grunt.loadNpmTasks('grunt-contrib-htmlmin');
   grunt.loadTasks('tasks/');
 
   // register a custom task to hit slack
@@ -157,7 +171,7 @@ module.exports = function(grunt) {
       }
   });
 
-  grunt.registerTask('default', ['copy', 'nunjucks', 'less', 'jshint', 'uglify']);
+  grunt.registerTask('default', ['copy', 'nunjucks', 'htmlmin', 'less', 'jshint', 'uglify']);
   // Publishing tasks
   grunt.registerTask('stage', ['default', 'deployS3:stage', 'slack:stage']);
   grunt.registerTask('prod', ['default', 'deployS3:prod', 'slack:prod']);
