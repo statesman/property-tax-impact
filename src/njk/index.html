@@ -46,10 +46,10 @@
               <h2><span class="order">{{ home.id }}</span> {{ home.neighborhood }} in {{ home.region }}</h2>
               <p>This {% if home.bedrooms %}<strong>{{ home.bedrooms }} bedroom</strong>, {% endif %} <strong>{{ home.baths }} bath</strong> home in {{ home.neighborhood }} has <strong>{{ home.sqfoot }} square feet</strong>{% if home.acres %} on <strong>{{ home.acres }} acres</strong>{% endif %}.</p>
               <p>The appraised value <strong>{{ home.appdir }} {{ home.appchange }} percent</strong> from {{ home.app2013 }} in 2013 to {{ home.app2017 }} in 2017, and the total tax bill <strong>{{ home.taxdirection }} {{ home.taxchange }} percent</strong> from {{ home.bill2013 }} to {{ home.bill2017 }} in the same period.</p>
-              <!-- optional take -->{% if home.opttext %}<p>{{ home.opttext }}</p>{% endif %}
+              {# optional take #}{% if home.opttext %}<p>{{ home.opttext }}</p>{% endif %}
             </div>
             <div class="col-xs-12 col-sm-6">
-              <!-- push for large+ -->
+              {# push for large+ #}
               <img class="img-responsive" src="images/{{ home.code }}.png"><br>
             </div>
           </div>
@@ -67,17 +67,6 @@
 
     </div>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-66319610-2', 'auto');
-      ga('send', 'pageview');
-    </script>
-
     <script src="scripts.js"></script>
-    <script src="//localhost:35729/livereload.js"></script>
   </body>
 </html>
