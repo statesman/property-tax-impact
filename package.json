@@ -19,7 +19,7 @@
   "homepage": "https://github.com/statesman/20170815-school-ratings#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "pym.js": "^1.1.1"
+    "pym.js": "^1.3.2"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
